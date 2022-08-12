@@ -2,9 +2,9 @@
 
 Requisitos
 ---------
-Java 11 Amazon Correto
-Maven
-BD H2 (Incluido en la aplicación, lo registros se guardan de manera temporal)
+- Java 11 Amazon Correto
+- Maven
+- BD H2 (Incluido en la aplicación, lo registros se guardan de manera temporal)
 
 Desarrollo
 -----------

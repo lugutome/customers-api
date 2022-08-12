@@ -15,7 +15,7 @@ Desarrollo
    
 * Importar el proyecto en Eclipse
 
-Instación
+Instalación
 ---------
 * Generar Jar
   mvn clean package

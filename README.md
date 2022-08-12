@@ -1,27 +1,30 @@
 # CustomersWeb
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
+Requisitos
+---------
+Java 11 Amazon Correto
+Maven
+BD H2 (Incluido en la aplicación, lo registros se guardan de manera temporal)
 
-## Development server
+Desarrollo
+-----------
+* Descargar los fuentes del repositorio:
+  
+* En la consola ejecutar:
+  mvn clean install
+   
+* Importar el proyecto en Eclipse
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Instación
+---------
+* Generar Jar
+  mvn clean package
 
-## Code scaffolding
+* Copiar el archivo "customers-api-1.0.0.jar" generado en la ruta "..\customers-api\target", a la ruta D:/CUSTOMERS
+* Abrir una consola CMD, colocarse en la ruta y luego ejecutar el Jar
+  D:/CUSTOMERS > java -jar customers-api-1.0.0.jar
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Esperar que cargue y luego probar en el navegador la ruta:
+  http://localhost:8081/customers-api/h2-console
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* Probar el servicio desde el Postman
